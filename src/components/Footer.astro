@@ -1,0 +1,11 @@
+---
+import { site } from '../data/site';
+---
+<footer class="site-footer">
+  <div>{site.name} · {site.location}</div>
+  <nav aria-label="Contact">
+    <a href={`mailto:${site.email}`}>{site.email}</a>
+    <a href={site.linkedin} rel="noopener">LinkedIn</a>
+    <a href={site.resume} target="_blank" rel="noopener">Resume<span class="sr-only"> (PDF, opens in a new tab)</span></a>
+  </nav>
+</footer>

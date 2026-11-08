@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/sports-illustrations", "destination": "/illustration", "permanent": true },
+    { "source": "/play", "destination": "/illustration", "permanent": true },
+    { "source": "/hemlane-accounting-bank-sync-feature", "destination": "/work/hemlane-bank-sync", "permanent": true },
+    { "source": "/hemlane-accounting", "destination": "/work/hemlane-bank-sync", "permanent": true },
+    { "source": "/hemlane-services", "destination": "/work/hemlane-services", "permanent": true }
+  ]
+}

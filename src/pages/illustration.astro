@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import { illustrations } from '../data/illustrations';
+---
+<Base title="Illustration" current="Illustration" description="Illustrations by Flora Liu.">
+  <section class="play">
+    <div class="play-intro">
+      <p class="eyebrow" style="margin: 0 0 .75rem">Illustration</p>
+      <h1>Illustration</h1>
+      <p>Before product design, I trained as an illustrator at RISD. I still draw for fun, from sports to fan art.</p>
+    </div>
+    {illustrations.length > 0 ? (
+      <div class="play-grid">
+        {[1, 2, 3].map((col) => (
+          <div class="play-col">
+            {illustrations.filter((item) => item.column === col).map((item) => (
+              <figure class="play-item">
+                <img src={item.src} alt={item.alt} width={item.width} height={item.height} loading="lazy" />
+                {(item.title || item.caption) && (
+                  <figcaption>{item.title}{item.title && item.caption ? ' · ' : ''}{item.caption}</figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="play-empty">Illustrations coming soon.</p>
+    )}
+  </section>
+</Base>

@@ -1,0 +1,13 @@
+---
+import { nav } from '../data/site';
+interface Props { current?: string; showName?: boolean }
+const { current, showName = false } = Astro.props;
+---
+<nav class="site-nav" aria-label="Main">
+  {showName && <a class="name" href="/">Flora Liu</a>}
+  <div class="links">
+    {nav.map((item) => (
+      <a class="navlink" href={item.href} aria-current={current === item.label ? 'page' : undefined}>{item.label}</a>
+    ))}
+  </div>
+</nav>

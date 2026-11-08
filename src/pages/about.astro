@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+<Base title="About" current="About Me">
+  <section class="about">
+    <figure class="about-photo">
+      <img src="/about/flora.jpg" alt="Flora in a black cap, grey scarf and winter coat in the stands of the Santiago Bernabéu" width="1000" height="1250" />
+      <figcaption>At the Santiago Bernabéu, watching Real Madrid</figcaption>
+    </figure>
+    <div class="prose">
+      <h1>Hi, this is Flora</h1>
+      <p>Art has always been how I express myself and connect with others. I studied Illustration at the Rhode Island School of Design (RISD), where I discovered how art and design can make a positive impact on people’s lives.</p>
+      <p>After earning my BFA in 2019, I helped customers refine their designs at a card company, which sparked my interest in improving everyday experiences online. In 2020, I joined Hemlane, a property management startup, and grew from hand-drawn illustration into UX design, creating features and interfaces that became the foundation of the product.</p>
+      <p>Now I’m earning my Master of Human-Computer Interaction (MHCI) at Carnegie Mellon University, building on my research skills to design accessible experiences for everyone.</p>
+      <p>In my free time, I read manga, draw fan art, and watch soccer. I’m a passionate Real Madrid fan, and in 2023 I traveled to Spain to watch my favorite player, Luka Modrić, play in person.</p>
+      <p style="display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem">
+        <a class="btn" href={site.resume} target="_blank" rel="noopener">Resume<span class="sr-only"> (PDF, opens in a new tab)</span></a>
+        <a class="btn" href={`mailto:${site.email}`}>Email me</a>
+        <a class="btn" href="/illustration">See my illustrations</a>
+      </p>
+    </div>
+  </section>
+</Base>

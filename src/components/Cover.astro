@@ -1,0 +1,19 @@
+---
+interface Props {
+  cover?: string;
+  coverAlt?: string;
+  coverScreens?: { src: string; alt: string }[];
+  eager?: boolean;
+}
+const { cover, coverAlt = '', coverScreens, eager = false } = Astro.props;
+const loading = eager ? 'eager' : 'lazy';
+---
+{coverScreens && coverScreens.length > 0 ? (
+  <div class="cover-phones">
+    {coverScreens.map((s) => <img src={s.src} alt={s.alt} width="390" height="844" loading={loading} />)}
+  </div>
+) : cover ? (
+  <img src={cover} alt={coverAlt} loading={loading} />
+) : (
+  <span class="cover-empty">Cover image coming</span>
+)}

@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Cover from './Cover.astro';
+interface Props { entry: CollectionEntry<'work'>; flip?: boolean }
+const { entry, flip = false } = Astro.props;
+const d = entry.data;
+const href = `/work/${entry.id}`;
+const role = d.overview.find((o) => o.label === 'Role')?.value;
+const timeline = d.overview.find((o) => o.label === 'Timeline')?.value;
+---
+<article class:list={['case', { flip }]}>
+  <a class="case-thumb" href={href} aria-label={`Open case study: ${d.title}`} tabindex="-1">
+    <Cover cover={d.cover} coverAlt={d.coverAlt} coverScreens={d.coverScreens} />
+  </a>
+  <div class="case-text">
+    <p class="eyebrow">{d.company}</p>
+    <h3><a href={href} style="color: inherit; text-decoration: none">{d.title}</a></h3>
+    {d.tags.length > 0 && (
+      <ul class="chips" aria-label="Project type">{d.tags.slice(0, 4).map((t) => <li>{t}</li>)}</ul>
+    )}
+    <p>{d.summary}</p>
+    {d.highlight && <p class="case-highlight">{d.highlight}</p>}
+    {(role || timeline) && (
+      <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; row-gap: .35rem">
+        {role && <><dt class="mono" style="font-size: .85rem; color: var(--mint); padding-top: .15rem">Role</dt><dd style="margin: 0">{role}</dd></>}
+        {timeline && <><dt class="mono" style="font-size: .85rem; color: var(--mint); padding-top: .15rem">Timeline</dt><dd style="margin: 0">{timeline}</dd></>}
+      </dl>
+    )}
+    <a class="text-link" href={href}>View case study</a>
+  </div>
+</article>
