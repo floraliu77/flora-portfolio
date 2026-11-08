@@ -14,5 +14,5 @@ export const nav = [
   { label: 'Home', href: '/' },
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Illustration', href: '/illustration' },
-  { label: 'About Me', href: '/about' },
+  { label: 'About Me', short: 'About', href: '/about' }, // shortens to `short` when the nav would wrap
 ];

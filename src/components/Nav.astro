@@ -6,8 +6,32 @@ const { current, showName = false } = Astro.props;
 <nav class="site-nav" aria-label="Main">
   {showName && <a class="name" href="/">Flora Liu</a>}
   <div class="links">
-    {nav.map((item) => (
-      <a class="navlink" href={item.href} aria-current={current === item.label ? 'page' : undefined}>{item.label}</a>
-    ))}
+    {nav.map((item) => {
+      const short = 'short' in item ? item.short : undefined;
+      const tail = short && item.label.startsWith(short) ? item.label.slice(short.length) : '';
+      return (
+        <a class="navlink" href={item.href} aria-current={current === item.label ? 'page' : undefined} aria-label={tail ? item.label : undefined}>
+          {tail ? <>{short}<span class="nav-tail" aria-hidden="true">{tail}</span></> : item.label}
+        </a>
+      );
+    })}
   </div>
 </nav>
+
+<script>
+  // If the nav links don't fit on one line, drop the optional words (e.g. "About Me" -> "About").
+  function fit(nav: HTMLElement) {
+    const links = nav.querySelector<HTMLElement>('.links');
+    if (!links || !links.children.length) return;
+    nav.classList.remove('is-compact');
+    const items = [...links.children] as HTMLElement[];
+    const top = items[0].offsetTop;
+    if (items.some((i) => i.offsetTop > top + 2)) nav.classList.add('is-compact');
+  }
+  document.querySelectorAll<HTMLElement>('.site-nav').forEach((nav) => {
+    const run = () => fit(nav);
+    run();
+    document.fonts?.ready.then(run);
+    new ResizeObserver(run).observe(nav);
+  });
+</script>

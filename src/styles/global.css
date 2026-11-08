@@ -229,3 +229,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--mint); outline-
 
 /* Visible to screen readers only */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Nav on phones: tighter spacing, taps stay at least 44px tall; optional words hide if links still wrap */
+.site-nav.is-compact .nav-tail { display: none; }
+@media (max-width: 480px) {
+  .site-nav .links { gap: .3rem; margin-left: -.35rem; }
+  .navlink { padding: .8rem .35rem; }
+}
+@media (max-width: 389px) {
+  .site-nav { font-size: .84rem; } /* ~13.5px so the links fit on narrow phones */
+  .site-nav .links { gap: .2rem; }
+}
+@media (max-width: 339px) {
+  .site-nav { font-size: .78rem; } /* ~12.5px for the smallest phones */
+  .navlink { padding: .85rem .25rem; }
+}
