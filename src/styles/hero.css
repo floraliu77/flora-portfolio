@@ -1,12 +1,14 @@
 /* Hero ported from the canvas (Main.dc.html); blob clip-path lives in blob.css */
 /* Hero stops short of the fold so the Selected work title peeks in below it */
-.hero { position: relative; height: calc(100vh - 8.5rem); min-height: 34rem; display: flex; align-items: flex-start; overflow: hidden; }
-.hero-text { flex: 1 1 auto; min-width: 0; height: 100%; padding: 2.75rem 1.5rem 2.5rem var(--gutter); display: flex; flex-direction: column; }
+/* min-height (not height): if the text wraps onto more lines than fit, the hero grows instead of clipping it */
+.hero { position: relative; min-height: max(34rem, calc(100vh - 8.5rem)); display: flex; align-items: stretch; overflow: hidden; }
+.hero-text { flex: 1 1 auto; min-width: 0; padding: 2.75rem 1.5rem 2.5rem var(--gutter); display: flex; flex-direction: column; }
 .hero-body { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: clamp(.9rem, 2.6vh, 1.75rem); max-width: 36rem; padding-bottom: 3vh; }
-.hero-art { flex: 0 0 auto; width: min(62vw, calc((100vh - 8.5rem) * 1.02)); aspect-ratio: 968 / 1117; position: relative; }
+/* The art column stretches to the hero's height; the stage keeps the art's proportions and any extra is cropped by the hero */
+.hero-art { flex: 0 0 auto; width: min(62vw, calc((100vh - 8.5rem) * 1.02)); position: relative; }
 /* Bigger art: the empty bottom of the stage runs past the hero's fold line, so lift Flora up and left to keep her in view */
 .hero-art .flora { translate: -19% -15%; }
-.art-stage { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.art-stage { position: absolute; left: 0; top: 0; width: 100%; aspect-ratio: 968 / 1117; }
 .t-sub { font-size: clamp(1.1rem, 2.8vh, 1.7rem); }
 .t-h1 { font-size: clamp(2.6rem, 8.2vh, 5.4rem); }
 .t-h2 { font-size: clamp(1.9rem, 5.4vh, 3.6rem); }
@@ -34,6 +36,13 @@
 
 @media (prefers-reduced-motion: reduce) {
   .scroll-cue svg, .blob, .flora, .flora-legs, .ink, .spark, .planet { animation: none !important; }
+}
+
+/* In-between widths (small laptops, tablets in landscape): give the text column more room */
+@media (min-width: 821px) and (max-width: 1200px) {
+  .hero-art { width: min(47vw, calc((100vh - 8.5rem) * 1.02)); }
+  /* These two shapes land on the text when it wraps more */
+  .hero-deco.deco-wide { display: none; }
 }
 
 @media (max-width: 820px) {
