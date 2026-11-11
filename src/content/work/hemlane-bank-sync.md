@@ -5,7 +5,7 @@ order: 2
 summary: Redesigning how property owners import, sync, and manage bank transactions, to make accounting easier and stop customers leaving for competitors.
 subtitle: Re-designing the experience for users to import transactions, synchronize accounts, and other quality-of-life features to make accounting easier.
 highlight: 30% adoption rate within the first 30 days of launch
-cover: /work/hemlane-bank-sync/cover.png
+cover: /work/hemlane-bank-sync/cover.webp
 coverAlt: Hemlane financial dashboard showing synced bank transactions on desktop and mobile
 tags: [UX Design, UI Design, Mobile Web, Finances, Dashboard, B2B]
 overview:
@@ -29,7 +29,7 @@ Hemlane is a SaaS property management startup that strives to enhance its produc
 
 I took charge as the lead UX designer for the Bank Sync feature, the last part of the whole accounting redesign. Through research and collaboration with developers, I gained valuable insights and overcame challenges, ultimately designing a product that made an impact on the business and received a positive reception.
 
-<figure><img src="/work/hemlane-bank-sync/account-mockup.png" alt="Hemlane bank account page with synced transactions on desktop" loading="lazy" /></figure>
+<figure><img src="/work/hemlane-bank-sync/account-mockup.webp" alt="Hemlane bank account page with synced transactions on desktop" loading="lazy" /></figure>
 
 ## Background
 
@@ -77,14 +77,14 @@ I studied Buildium and DoorLoop (property management software) and Stessa (accou
 - A merge tool for duplicated imported transactions
 - A simplified financial dashboard with fewer categories, to present data more clearly and let users act fast
 
-<figure><img src="/work/hemlane-bank-sync/competitor-stessa-merge.png" alt="Stessa transaction list with a prompt to merge duplicate transactions" loading="lazy" /><figcaption>Example of Stessa’s merge feature</figcaption></figure>
+<figure><img src="/work/hemlane-bank-sync/competitor-stessa-merge.webp" alt="Stessa transaction list with a prompt to merge duplicate transactions" loading="lazy" /><figcaption>Example of Stessa’s merge feature</figcaption></figure>
 
 ## User persona & user flow
 
 Our core user is a property owner with more than one property. I created a user flow to clarify the different actions related to bank sync, transaction editing, and transaction merging.
 
-<figure class="narrow"><img src="/work/hemlane-bank-sync/persona.svg" alt="Persona: property owner with multiple properties, with motivation, pain point and design consideration" loading="lazy" /><figcaption>User persona</figcaption></figure>
-<figure><img src="/work/hemlane-bank-sync/user-flow.svg" alt="User flow for selecting, excluding, creating and splitting transactions" loading="lazy" /><figcaption>User flow</figcaption></figure>
+<figure class="narrow"><img src="/work/hemlane-bank-sync/persona.webp" alt="Persona: property owner with multiple properties, with motivation, pain point and design consideration" loading="lazy" /><figcaption>User persona</figcaption></figure>
+<figure><img src="/work/hemlane-bank-sync/user-flow.webp" alt="User flow for selecting, excluding, creating and splitting transactions" loading="lazy" /><figcaption>User flow</figcaption></figure>
 
 ## Design highlight 1
 
@@ -123,10 +123,10 @@ Our core user is a property owner with more than one property. I created a user 
 3. Use an outline border instead of a colored background
 
 <div class="compare four">
-  <figure><img src="/work/hemlane-bank-sync/cta-old.png" alt="Original modal button layout" loading="lazy" /><figcaption>Before</figcaption></figure>
-  <figure><img src="/work/hemlane-bank-sync/cta-stack.png" alt="Stacked buttons" loading="lazy" /><figcaption>Stack</figcaption></figure>
-  <figure><img src="/work/hemlane-bank-sync/cta-border.png" alt="Outlined buttons spread across the modal" loading="lazy" /><figcaption>Outline</figcaption></figure>
-  <figure><img src="/work/hemlane-bank-sync/cta-final.png" alt="Final button layout with outlined buttons of equal size" loading="lazy" /><figcaption>Final</figcaption></figure>
+  <figure><img src="/work/hemlane-bank-sync/cta-old.webp" alt="Original modal button layout" loading="lazy" /><figcaption>Before</figcaption></figure>
+  <figure><img src="/work/hemlane-bank-sync/cta-stack.webp" alt="Stacked buttons" loading="lazy" /><figcaption>Stack</figcaption></figure>
+  <figure><img src="/work/hemlane-bank-sync/cta-border.webp" alt="Outlined buttons spread across the modal" loading="lazy" /><figcaption>Outline</figcaption></figure>
+  <figure><img src="/work/hemlane-bank-sync/cta-final.webp" alt="Final button layout with outlined buttons of equal size" loading="lazy" /><figcaption>Final</figcaption></figure>
 </div>
 
 **Outcome**
@@ -136,13 +136,13 @@ Our core user is a property owner with more than one property. I created a user 
 - **Less visual friction** — less clutter and noise while completing tasks
 
 <div class="screens two">
-  <figure><img class="tall" src="/work/hemlane-bank-sync/mobile-transaction-details.png" alt="Mobile transaction details popup with stacked outlined buttons" loading="lazy" /><figcaption>Mobile · Transaction Details popup</figcaption></figure>
+  <figure><img class="tall" src="/work/hemlane-bank-sync/mobile-transaction-details.webp" alt="Mobile transaction details popup with stacked outlined buttons" loading="lazy" /><figcaption>Mobile · Transaction Details popup</figcaption></figure>
 </div>
 
 ## Design
 
-<figure><img src="/work/hemlane-bank-sync/wireframes-merge.png" alt="Grayscale wireframes of the merge transaction process" loading="lazy" /><figcaption>Wireframes for the merge transaction process</figcaption></figure>
-<figure><img src="/work/hemlane-bank-sync/dashboard-mockups.png" alt="Hi-fi transactions dashboard mockups" loading="lazy" /><figcaption>Dashboard with filled content</figcaption></figure>
+<figure><img src="/work/hemlane-bank-sync/wireframes-merge.webp" alt="Grayscale wireframes of the merge transaction process" loading="lazy" /><figcaption>Wireframes for the merge transaction process</figcaption></figure>
+<figure><img src="/work/hemlane-bank-sync/dashboard-mockups.webp" alt="Hi-fi transactions dashboard mockups" loading="lazy" /><figcaption>Dashboard with filled content</figcaption></figure>
 
 ## Prototype
 
@@ -152,8 +152,8 @@ Our core user is a property owner with more than one property. I created a user 
 - **Edit transaction** — clearer wording throughout
 - **Split transaction** — users can now split one transaction into multiple equal or non-equal smaller transactions
 
-<figure class="w50"><img src="/work/hemlane-bank-sync/split-transaction.png" alt="Split transaction popup dividing one transaction into several" loading="lazy" /><figcaption>Split transaction popup</figcaption></figure>
-<figure class="w40"><img src="/work/hemlane-bank-sync/edit-transaction.png" alt="Edit transaction popup" loading="lazy" /><figcaption>Edit transaction popup</figcaption></figure>
+<figure class="w50"><img src="/work/hemlane-bank-sync/split-transaction.webp" alt="Split transaction popup dividing one transaction into several" loading="lazy" /><figcaption>Split transaction popup</figcaption></figure>
+<figure class="w40"><img src="/work/hemlane-bank-sync/edit-transaction.webp" alt="Edit transaction popup" loading="lazy" /><figcaption>Edit transaction popup</figcaption></figure>
 
 ## Post-launch
 
@@ -165,7 +165,7 @@ Customer reviews highlighted how imported transaction data streamlined bookkeepi
 
 **Iteration.** After launch, several users asked for a date range for data syncing, so we added one.
 
-<figure class="w40"><img src="/work/hemlane-bank-sync/historical-import.png" alt="Bank connection modal with a date range for importing historical transactions" loading="lazy" /><figcaption>Date range for historical import</figcaption></figure>
+<figure class="w40"><img src="/work/hemlane-bank-sync/historical-import.webp" alt="Bank connection modal with a date range for importing historical transactions" loading="lazy" /><figcaption>Date range for historical import</figcaption></figure>
 
 ## Takeaways
 

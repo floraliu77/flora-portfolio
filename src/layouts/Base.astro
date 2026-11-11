@@ -10,8 +10,9 @@ interface Props {
   current?: string;
   image?: string;
   bareHeader?: boolean; // home renders its own nav inside the hero
+  theme?: 'dark' | 'light'; // light is the site default
 }
-const { title, description = site.description, current, image, bareHeader = false } = Astro.props;
+const { title, description = site.description, current, image, bareHeader = false, theme = 'light' } = Astro.props;
 const fullTitle = title ? `${title} | ${site.name}` : site.title;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image ? new URL(image, Astro.site).href : undefined;
@@ -29,14 +30,14 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     {ogImage && <meta property="og:image" content={ogImage} />}
-    <meta name="theme-color" content="#0E1229" />
+    <meta name="theme-color" content={theme === 'light' ? '#FFFFFF' : '#0E1229'} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Lilex:wght@400;700&display=swap" rel="stylesheet" />
     <slot name="head" />
   </head>
-  <body>
+  <body class={theme === 'light' ? 'theme-light' : undefined}>
     <a class="skip" href="#main">Skip to content</a>
     {!bareHeader && (
       <header class="page-header"><Nav current={current} showName /></header>

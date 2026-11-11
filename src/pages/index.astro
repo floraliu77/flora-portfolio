@@ -9,8 +9,14 @@ import '../styles/blob.css';
 
 const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
 ---
-<Base bareHeader>
+<Base bareHeader theme="light">
   <div class="hero">
+    <!-- Small sketch shapes on the text side (hidden on phones) -->
+    <img class="planet sketch-star hero-deco p3" src="/art/sketch/sparkle.svg" alt="" style="left: 3%; top: 20%; width: 1.9rem" />
+    <img class="planet sketch-star hero-deco p2" src="/art/sketch/circle-dots.svg" alt="" style="left: 3.5%; top: 58%; width: 2.6rem" />
+    <img class="planet sketch-star hero-deco p4" src="/art/sketch/triangle-tone.svg" alt="" style="left: 6%; top: 86%; width: 2.3rem" />
+    <img class="planet sketch-star hero-deco p1" src="/art/sketch/star-tone.svg" alt="" style="left: 41%; top: 13%; width: 2.4rem" />
+    <img class="planet sketch-star hero-deco p3" src="/art/sketch/square-tone.svg" alt="" style="left: 31%; top: 85%; width: 2rem" />
     <div class="hero-text">
       <Nav current="Home" />
       <div class="hero-body">
@@ -20,10 +26,12 @@ const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b
           <span class="t-h2" style="display: block; margin-top: .12em">Let’s work together</span>
         </h1>
         <ul class="chips" aria-label="Background" style="font-size: .82rem">
-          <li>RISD BFA</li><li>CMU MHCI</li><li>Startup Experience</li>
+          <li>CMU MHCI</li><li>RISD BFA</li><li>B2B SaaS</li>
         </ul>
         <p class="t-body" style="margin: .5rem 0 0; line-height: 1.55; max-width: 30rem">I utilize UX design, creative storytelling, and HCI research to bring betterment to the world</p>
-        <div style="display: flex; flex-wrap: wrap; gap: .85rem; margin-top: .5rem">
+        <div class="hero-ctas" style="display: flex; flex-wrap: wrap; gap: .85rem; margin-top: .5rem">
+          <img class="planet sketch-star hero-deco-m p1" src="/art/sketch/star-tone.svg" alt="" style="right: 8%; bottom: .2rem; width: 2.6rem" />
+          <img class="planet sketch-star hero-deco-m p3" src="/art/sketch/sparkle.svg" alt="" style="right: 30%; bottom: 1.4rem; width: 1.6rem" />
           <a class="btn" href={site.resume} download="Flora-Liu-Resume.pdf">Download CV</a>
           <a class="btn" href="/portfolio">View Portfolio</a>
           <a class="btn" href="/about">About Me</a>
@@ -33,17 +41,12 @@ const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b
     </div>
     <div class="hero-art">
       <div class="art-stage">
-        <img class="planet p1" src="/art/planet-1.svg" alt="" style="left: 4.13%; top: 9.67%; width: 14.88%" />
-        <img class="planet p2" src="/art/planet-2.svg" alt="" style="left: 9.5%; top: 76.28%; width: 10.95%" />
-        <img class="planet p3" src="/art/planet-3.svg" alt="" style="left: 91.63%; top: 85.41%; width: 4.34%" />
-        <img class="planet p4" src="/art/planet-4.svg" alt="" style="left: 28.51%; top: 92.66%; width: 2.07%" />
+        <img class="planet sketch-star p1" src="/art/sketch/star-tone.svg" alt="" style="left: 3%; top: 8%; width: 11%" />
+        <img class="planet sketch-star p3" src="/art/sketch/square-tone.svg" alt="" style="left: 0%; top: 45%; width: 7.5%" />
+        <img class="planet sketch-star p2" src="/art/sketch/circle-dots.svg" alt="" style="left: 8%; top: 74%; width: 9.5%" />
+        <img class="planet sketch-star p4" src="/art/sketch/triangle-dots.svg" alt="" style="left: 28%; top: 90%; width: 6%" />
+        <img class="planet sketch-star p3" src="/art/sketch/sparkle.svg" alt="" style="left: 90%; top: 85%; width: 5.5%" />
         <img class="layer blob" src="/art/city.svg" alt="Futuristic city that turns from a pencil sketch on the left into a polished rendering on the right" />
-        <svg class="ink-layer" viewBox="760 0 968 1117" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
-          <path class="ink" d="M1436 676c12 8 22 -6 34 2s22 8 34 0s22 -8 34 0s20 6 32 0"></path>
-          <path class="spark s1" d="M1452 640l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"></path>
-          <path class="spark s2" d="M1478 662l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path>
-          <path class="spark s3" d="M1418 650l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path>
-        </svg>
         <div class="flora layer">
           <img class="layer" src="/art/flora-back.svg" alt="" />
           <img class="layer flora-legs" src="/art/flora-legs.svg" alt="" />
@@ -54,14 +57,14 @@ const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b
   </div>
 
   <section id="work" class="work" aria-labelledby="work-title">
-    <img class="planet p2" src="/art/planet-2.svg" alt="" style="right: -4rem; top: 3rem; width: 13rem" />
-    <img class="planet p1" src="/art/planet-1.svg" alt="" style="left: 2%; top: 40.5%; width: 6.5rem" />
-    <img class="planet p3" src="/art/planet-3.svg" alt="" style="right: 5%; top: 70%; width: 3rem" />
-    <img class="planet p4" src="/art/planet-4.svg" alt="" style="left: 46%; bottom: 3rem; width: 1.5rem" />
+    <img class="planet sketch-star p2" src="/art/sketch/circle-line.svg" alt="" style="right: 4%; top: 4rem; width: 6rem" />
+    <img class="planet sketch-star p1" src="/art/sketch/star-hatch.svg" alt="" style="left: 2%; top: 40%; width: 5.5rem" />
+    <img class="planet sketch-star p3" src="/art/sketch/triangle-tone.svg" alt="" style="right: 5%; top: 70%; width: 4.75rem" />
+    <img class="planet sketch-star p4" src="/art/sketch/sparkle.svg" alt="" style="left: 46%; bottom: 3rem; width: 2.75rem" />
     <div class="work-inner">
       <div style="display: flex; flex-direction: column; gap: .9rem; max-width: 40rem">
         <h2 id="work-title" class="section-title">Selected work</h2>
-        <p style="margin: 0; font-size: 1.2rem; line-height: 1.55">Product design from four and a half years at a SaaS startup, and new HCI work from Carnegie Mellon.</p>
+        <p style="margin: 0; font-size: 1.2rem; line-height: 1.55">Selected design work from my professional career at a SaaS startup and my coursework at Carnegie Mellon.</p>
       </div>
       {work.map((entry, i) => <CaseCard entry={entry} flip={i % 2 === 1} />)}
     </div>

@@ -6,9 +6,9 @@ summary: An in-app store map, trip route, and step-by-step guide that help senio
 subtitle: Designing an accessible in-store wayfinding experience for CVS’s most loyal customers, while still growing in-store spend.
 highlight: Accessibility-first, with an equal text + voice mode for every map feature
 coverScreens:
-  - { src: /work/cvs-store-map/map-aisle3-coupon.png, alt: "Store map with Aisle 5 highlighted and a 'Top deal for today' card for Olay Body Wash" }
-  - { src: /work/cvs-store-map/route-with-location.png, alt: "Trip route with a dashed path from the entrance to Aisle 3 and a Step 1 card" }
-  - { src: /work/cvs-store-map/guided-voice-on.png, alt: "Step-by-step guide with voice guide on and written walking directions" }
+  - { src: /work/cvs-store-map/map-aisle3-coupon.webp, alt: "Store map with Aisle 5 highlighted and a 'Top deal for today' card for Olay Body Wash" }
+  - { src: /work/cvs-store-map/route-with-location.webp, alt: "Trip route with a dashed path from the entrance to Aisle 3 and a Step 1 card" }
+  - { src: /work/cvs-store-map/guided-voice-on.webp, alt: "Step-by-step guide with voice guide on and written walking directions" }
 tags: [Interaction Design, Accessibility, Mobile, Kiosk, AI-assisted]
 overview:
   - { label: Timeline, value: Sep – Oct 2026 }
@@ -54,12 +54,12 @@ If I had followed the brief as written, I would have redesigned the existing tim
 Shoppers build a trip from Home, Shop, or a product page. The store map shows where everything is and the best deals by aisle. The trip route walks them from the entrance to each item, with a step-by-step text guide for anyone who prefers reading, or can’t see the map.
 
 <div class="screens six">
-  <figure><img src="/work/cvs-store-map/home-trip-in-progress.png" alt="CVS Home with a Trip Planner card and trip badge" loading="lazy" /><figcaption>Home · Trip Planner entry</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/pdp-add-to-trip.png" alt="Product page with In-store Trip selected and an Add to Trip button" loading="lazy" /><figcaption>Product page · In-store Trip</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/trip-3-added.png" alt="Store trip list with three items" loading="lazy" /><figcaption>Trip list</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/map-aisle3-coupon.png" alt="Store map with a top deal card" loading="lazy" /><figcaption>Store map · Top deal for today</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/map-view-list.png" alt="Store map deals shown as a list" loading="lazy" /><figcaption>Deals as a list</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/route-with-location.png" alt="Trip route from entrance to Aisle 3" loading="lazy" /><figcaption>Trip route · Step 1</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/home-trip-in-progress.webp" alt="CVS Home with a Trip Planner card and trip badge" loading="lazy" /><figcaption>Home · Trip Planner entry</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/pdp-add-to-trip.webp" alt="Product page with In-store Trip selected and an Add to Trip button" loading="lazy" /><figcaption>Product page · In-store Trip</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/trip-3-added.webp" alt="Store trip list with three items" loading="lazy" /><figcaption>Trip list</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/map-aisle3-coupon.webp" alt="Store map with a top deal card" loading="lazy" /><figcaption>Store map · Top deal for today</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/map-view-list.webp" alt="Store map deals shown as a list" loading="lazy" /><figcaption>Deals as a list</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/route-with-location.webp" alt="Trip route from entrance to Aisle 3" loading="lazy" /><figcaption>Trip route · Step 1</figcaption></figure>
 </div>
 
 ## Equal experience: Step-by-Step
@@ -74,9 +74,9 @@ I wanted people with low vision, and people who simply prefer directions in word
 - **Find by camera scan.** At the shelf, shoppers can scan an item. A sound and vibration confirm it’s the right one.
 
 <div class="screens">
-  <figure><img src="/work/cvs-store-map/guided-voice-off.png" alt="Step-by-step guide with voice guide off" loading="lazy" /><figcaption>Voice guide off (default)</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/guided-voice-on.png" alt="Step-by-step guide with voice guide on and tone options" loading="lazy" /><figcaption>Voice guide on</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/camera-scan-success.png" alt="Camera scan confirming a product match" loading="lazy" /><figcaption>Camera scan · match confirmed</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/guided-voice-off.webp" alt="Step-by-step guide with voice guide off" loading="lazy" /><figcaption>Voice guide off (default)</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/guided-voice-on.webp" alt="Step-by-step guide with voice guide on and tone options" loading="lazy" /><figcaption>Voice guide on</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/camera-scan-success.webp" alt="Camera scan confirming a product match" loading="lazy" /><figcaption>Camera scan · match confirmed</figcaption></figure>
 </div>
 
 ## Accessibility details
@@ -91,8 +91,8 @@ I wanted people with low vision, and people who simply prefer directions in word
 Younger customers loved flash deals and in-store coupons in past CVS initiatives. The Deals Treasure Hunt is an optional, skippable mission layered on top of a normal trip. It adds a deal stop to the route, and completion is confirmed by the shopper, not inferred from location tracking.
 
 <div class="screens">
-  <figure><img src="/work/cvs-store-map/treasure-hunt.png" alt="Deals Treasure Hunt offer on the map" loading="lazy" /><figcaption>Treasure Hunt offer</figcaption></figure>
-  <figure><img src="/work/cvs-store-map/treasure-complete.png" alt="Treasure Hunt Complete popup with stars and confetti" loading="lazy" /><figcaption>Signature microinteraction · Treasure Hunt Complete</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/treasure-hunt.webp" alt="Deals Treasure Hunt offer on the map" loading="lazy" /><figcaption>Treasure Hunt offer</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/treasure-complete.webp" alt="Treasure Hunt Complete popup with stars and confetti" loading="lazy" /><figcaption>Signature microinteraction · Treasure Hunt Complete</figcaption></figure>
 </div>
 
 #### Signature microinteraction
@@ -115,14 +115,14 @@ I looked back at the live CVS app and found the Store Locator already shows resu
 - **Sold out.** The product page shows the item is unavailable, and **Add to Trip** is disabled.
 
 <div class="screens two">
-  <figure><img src="/work/cvs-store-map/pdp-sold-out.png" alt="Product page in a sold-out state with a disabled Add to Trip button" loading="lazy" /><figcaption>Sold out</figcaption></figure>
+  <figure><img src="/work/cvs-store-map/pdp-sold-out.webp" alt="Product page in a sold-out state with a disabled Add to Trip button" loading="lazy" /><figcaption>Sold out</figcaption></figure>
 </div>
 
 ## Second screen: in-store kiosk
 
 A 21.5-inch touchscreen kiosk at the entrance (and ideally a few more in store) gives everyone a bigger map. A split screen shows the trip route on one side and the step-by-step guide on the other, with a **Call for Assistance** button. I left voice off the kiosk on purpose: other shoppers shouldn’t overhear someone’s shopping list.
 
-<figure><img src="/work/cvs-store-map/kiosk-in-use.png" alt="Kiosk screen with the store map and route on the left and step-by-step directions on the right" loading="lazy" /><figcaption>Kiosk · map + step-by-step split screen</figcaption></figure>
+<figure><img src="/work/cvs-store-map/kiosk-in-use.webp" alt="Kiosk screen with the store map and route on the left and step-by-step directions on the right" loading="lazy" /><figcaption>Kiosk · map + step-by-step split screen</figcaption></figure>
 
 ## Designing with AI
 

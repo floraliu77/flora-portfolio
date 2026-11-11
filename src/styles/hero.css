@@ -1,8 +1,9 @@
 /* Hero ported from the canvas (Main.dc.html); blob clip-path lives in blob.css */
-.hero { position: relative; height: 100vh; min-height: 38rem; display: flex; align-items: flex-start; overflow: hidden; }
+/* Hero stops short of the fold so the Selected work title peeks in below it */
+.hero { position: relative; height: calc(100vh - 8.5rem); min-height: 34rem; display: flex; align-items: flex-start; overflow: hidden; }
 .hero-text { flex: 1 1 auto; min-width: 0; height: 100%; padding: 2.75rem 1.5rem 2.5rem var(--gutter); display: flex; flex-direction: column; }
 .hero-body { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: clamp(.9rem, 2.6vh, 1.75rem); max-width: 36rem; padding-bottom: 3vh; }
-.hero-art { flex: 0 0 auto; width: min(58vw, 86.7vh); aspect-ratio: 968 / 1117; position: relative; }
+.hero-art { flex: 0 0 auto; width: min(58vw, calc((100vh - 8.5rem) * .8667)); aspect-ratio: 968 / 1117; position: relative; }
 .art-stage { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 .t-sub { font-size: clamp(1.1rem, 2.8vh, 1.7rem); }
 .t-h1 { font-size: clamp(2.6rem, 8.2vh, 5.4rem); }
@@ -15,14 +16,9 @@
 .scroll-cue svg { width: 1.75rem; height: 1.75rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; animation: cueBob 1.8s ease-in-out infinite; }
 
 .layer { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.planet { position: absolute; display: block; height: auto; }
 .flora { transform-origin: 69.4% 60%; animation: floraWrite 3.6s ease-in-out infinite; }
 .flora-legs { transform-origin: 47% 83.7%; animation: floraKick 1.8s ease-in-out infinite; }
 .blob { animation: blobMorph 11s ease-in-out infinite; }
-.p1 { animation: drift1 6.5s ease-in-out infinite; }
-.p2 { animation: drift2 8.5s ease-in-out infinite; }
-.p3 { animation: drift1 5.2s ease-in-out infinite; animation-delay: -2s; }
-.p4 { animation: drift2 4.6s ease-in-out infinite; animation-delay: -1s; }
 .ink { fill: none; stroke: #FFFFFF; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 140; stroke-dashoffset: 140; opacity: 0; animation: inkDraw 3.6s ease-in-out infinite; }
 .spark { fill: #FFFFFF; opacity: 0; transform-box: fill-box; transform-origin: center; animation: twinkle 3.6s ease-in-out infinite; }
 .spark.s2 { animation-delay: .6s; }
@@ -31,8 +27,6 @@
 @keyframes cueBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
 @keyframes floraWrite { 0%,100% { transform: translate(0,0) rotate(0deg); } 25% { transform: translate(-0.4%,-0.9%) rotate(-1.8deg); } 50% { transform: translate(0.3%,-0.3%) rotate(0.9deg); } 75% { transform: translate(-0.2%,-0.7%) rotate(-0.8deg); } }
 @keyframes floraKick { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(5deg); } }
-@keyframes drift1 { 0%,100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(4%,-10%) rotate(-6deg); } }
-@keyframes drift2 { 0%,100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(-5%,8%) rotate(5deg); } }
 @keyframes inkDraw { 0% { stroke-dashoffset: 140; opacity: 0; } 10% { opacity: .9; } 55% { stroke-dashoffset: 0; opacity: .9; } 85%,100% { stroke-dashoffset: 0; opacity: 0; } }
 @keyframes twinkle { 0%,40%,100% { opacity: 0; transform: scale(.4); } 55% { opacity: 1; transform: scale(1); } 70% { opacity: 0; transform: scale(.6); } }
 
@@ -43,8 +37,10 @@
 @media (max-width: 820px) {
   .hero { position: static; height: auto; min-height: 0; flex-direction: column; }
   .scroll-cue { bottom: .75rem; background: rgba(14,18,41,.82); border: 1px solid var(--mint); }
-  .hero-text { position: relative; height: auto; min-height: 100vh; min-height: 100svh; width: 100%; padding: 1.5rem 1.25rem 5rem; }
-  .hero-body { padding-top: 2rem; }
+  /* Content sits right under the nav; the illustration starts after the buttons and peeks into the first screen */
+  .hero-text { position: relative; height: auto; min-height: 0; width: 100%; padding: 1.5rem 1.25rem 1.75rem; }
+  .hero-body { padding-top: 1.75rem; padding-bottom: 0; }
+  .scroll-cue { display: none; }
   .hero-art { width: 100%; aspect-ratio: 891 / 1095; overflow: hidden; }
   .art-stage { left: -8.7%; top: -2.04%; width: 108.7%; height: 102.04%; }
   .flora, .ink-layer { translate: -6% 3%; }
@@ -53,3 +49,11 @@
   .t-sub { font-size: 1.2rem; }
   .t-body { font-size: 1.05rem; }
 }
+
+.hero-deco { pointer-events: none; z-index: 0; }
+@media (max-width: 820px) { .hero-deco { display: none; } }
+/* Phone-only sketch shapes in the hero's open spots */
+.hero-deco-m { display: none; pointer-events: none; }
+.hero-ctas, .hero-body { position: relative; }
+@media (max-width: 820px) { .hero-deco-m { display: block; } }
+@media (max-width: 340px) { .hero-deco-m { display: none; } }

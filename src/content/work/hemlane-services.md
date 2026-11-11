@@ -5,7 +5,7 @@ order: 3
 summary: Users were churning for features Hemlane already offered but they couldn’t find. I designed a Services tab to showcase and promote them, plus the Repair Coordination+ detail page.
 subtitle: Feedback revealed that many users were unaware of Hemlane’s essential services. My role was to showcase and promote our features within a single, easily accessible tab.
 highlight: 2X weekly package upgrades in the first week of launch
-cover: /work/hemlane-services/cover.png
+cover: /work/hemlane-services/cover.webp
 coverAlt: Services tab cards for Leasing, Repair Coordination and Agents beside the Repair Coordination+ page on mobile
 tags: [Product Design, UI Design, Responsive Web, B2B]
 overview:
@@ -21,10 +21,10 @@ impact:
 Many users didn’t know Hemlane offered essential services, such as our comprehensive leasing options with five mix-and-match services. In this case study, I focus on the Services tab and the Repair Coordination+ detail page.
 
 <div class="card-row">
-  <figure><img src="/work/hemlane-services/card-leasing.png" alt="Leasing+ service card" loading="lazy" /></figure>
-  <figure><img src="/work/hemlane-services/card-repair.png" alt="Repair Coordination+ service card" loading="lazy" /></figure>
-  <figure><img src="/work/hemlane-services/card-eviction.png" alt="Eviction+ service card" loading="lazy" /></figure>
-  <figure><img src="/work/hemlane-services/card-agents.png" alt="Agents+ service card" loading="lazy" /></figure>
+  <figure><img src="/work/hemlane-services/card-leasing.webp" alt="Leasing+ service card" loading="lazy" /></figure>
+  <figure><img src="/work/hemlane-services/card-repair.webp" alt="Repair Coordination+ service card" loading="lazy" /></figure>
+  <figure><img src="/work/hemlane-services/card-eviction.webp" alt="Eviction+ service card" loading="lazy" /></figure>
+  <figure><img src="/work/hemlane-services/card-agents.webp" alt="Agents+ service card" loading="lazy" /></figure>
 </div>
 
 ## Impact
@@ -35,7 +35,7 @@ The product saw 2X weekly package upgrades in the first week of launch. The Serv
 
 As a fast-paced, compact startup, Hemlane moves quickly in product design and development. We worked in an Agile environment that encouraged collaboration and quick iterations. Problems were typically defined up front by the PM or stakeholders.
 
-<figure><img src="/work/hemlane-services/design-process.png" alt="Hemlane design process diagram" loading="lazy" /></figure>
+<figure><img src="/work/hemlane-services/design-process.webp" alt="Hemlane design process diagram" loading="lazy" /></figure>
 
 ## Background
 
@@ -58,7 +58,7 @@ In Q3 2023, the product team identified a significant issue: customers were chur
 
 I conducted a UX audit, analyzed competitors, and gathered existing best practices.
 
-<figure><img src="/work/hemlane-services/research.png" alt="Competitor audit board comparing how property management tools display services, tasks and dashboards" loading="lazy" /><figcaption>Competitor audit</figcaption></figure>
+<figure><img src="/work/hemlane-services/research.webp" alt="Competitor audit board comparing how property management tools display services, tasks and dashboards" loading="lazy" /><figcaption>Competitor audit</figcaption></figure>
 
 ## Hurdles
 
@@ -72,46 +72,46 @@ Four features were available at the time, and there was no design library. I des
 
 ## Design: Services tab
 
-<figure><img src="/work/hemlane-services/wireframe.png" alt="Grayscale wireframe of the Services tab with opted-in and additional services" loading="lazy" /><figcaption>Wireframe</figcaption></figure>
+<figure><img src="/work/hemlane-services/wireframe.webp" alt="Grayscale wireframe of the Services tab with opted-in and additional services" loading="lazy" /><figcaption>Wireframe</figcaption></figure>
 
 <div class="rounds" aria-label="Services card design rounds">
   <section class="round" data-label="Round 1">
-    <figure class="round-img"><img src="/work/hemlane-services/card-round1.png" alt="Leasing+ card with stats and a description box" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/card-round1.webp" alt="Leasing+ card with stats and a description box" loading="lazy" /></figure>
     <div class="round-text"><h4>Round 1 · Getting started</h4><p>The first cards were too text-heavy; the copy came straight from the project manager.</p></div>
   </section>
   <section class="round" data-label="Round 2">
-    <figure class="round-img"><img src="/work/hemlane-services/card-round2.png" alt="Horizontal Leasing+ card" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/card-round2.webp" alt="Horizontal Leasing+ card" loading="lazy" /></figure>
     <div class="round-text"><h4>Round 2 · Horizontal cards</h4><p>We tried a horizontal card style, but it wasn’t suitable for the Services tab.</p></div>
   </section>
   <section class="round" data-label="Round 3">
-    <figure class="round-img"><img src="/work/hemlane-services/card-round3.png" alt="Vertical Leasing+ card with a description and Learn More button" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/card-round3.webp" alt="Vertical Leasing+ card with a description and Learn More button" loading="lazy" /></figure>
     <div class="round-text"><h4>Round 3 · Simplifying</h4><p>Vertical cards showing the product description only, with the focus on CTA language.</p></div>
   </section>
   <section class="round" data-label="Final">
-    <figure class="round-img"><img src="/work/hemlane-services/card-final.png" alt="Final Leasing+ card with illustration, headline and Learn More button" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/card-final.webp" alt="Final Leasing+ card with illustration, headline and Learn More button" loading="lazy" /></figure>
     <div class="round-text"><h4>Final</h4><p>Graphics in the primary brand colors, and a unique CTA for each product.</p></div>
   </section>
 </div>
 
-<figure><img src="/work/hemlane-services/services-final.png" alt="Final Services tab showing the four service cards" loading="lazy" /><figcaption>Services tab · final design</figcaption></figure>
+<figure><img src="/work/hemlane-services/services-final.webp" alt="Final Services tab showing the four service cards" loading="lazy" /><figcaption>Services tab · final design</figcaption></figure>
 
 ## Design: Repair Coordination+ page
 
 <div class="rounds" aria-label="Repair Coordination+ design rounds">
   <section class="round" data-label="First mockup">
-    <figure class="round-img"><img src="/work/hemlane-services/rc-first.png" alt="Early Repair Coordination page with work-order cards under each property" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/rc-first.webp" alt="Early Repair Coordination page with work-order cards under each property" loading="lazy" /></figure>
     <div class="round-text"><h4>First mockup</h4><p>Each property listed its open work orders as individual cards.</p></div>
   </section>
   <section class="round" data-label="Round 1">
-    <figure class="round-img"><img src="/work/hemlane-services/rc-round1.png" alt="Horizontal property rows with Last Updated details" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/rc-round1.webp" alt="Horizontal property rows with Last Updated details" loading="lazy" /></figure>
     <div class="round-text"><h4>Round 1 · Reorganization</h4><p>Removed the work-order cards, moved to a horizontal style, and added “Last Updated” info.</p></div>
   </section>
   <section class="round" data-label="Round 2">
-    <figure class="round-img"><img src="/work/hemlane-services/rc-round2.png" alt="Simplified property cards with four fields and an Upgrade Package button" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/rc-round2.webp" alt="Simplified property cards with four fields and an Upgrade Package button" loading="lazy" /></figure>
     <div class="round-text"><h4>Round 2 · Simplification</h4><p>Only 4 fields on each property card, plus a space for a CTA or notice.</p></div>
   </section>
   <section class="round" data-label="Round 3">
-    <figure class="round-img"><img src="/work/hemlane-services/rc-round3.png" alt="Properties grouped into Complete, Essential and Basic packages" loading="lazy" /></figure>
+    <figure class="round-img"><img src="/work/hemlane-services/rc-round3.webp" alt="Properties grouped into Complete, Essential and Basic packages" loading="lazy" /></figure>
     <div class="round-text"><h4>Round 3 · Categorization</h4><p>Properties grouped by package type, with promotional copy for each category.</p></div>
   </section>
 </div>
@@ -120,11 +120,11 @@ Four features were available at the time, and there was no design library. I des
 
 CTAs moved out of the cards into one general CTA that opens an upgrade modal. Instead of 10 individual CTAs, users see at most 2 on the page.
 
-<figure><img src="/work/hemlane-services/rc-final.png" alt="Final Repair Coordination+ page with Complete, Essential and Basic sections" loading="lazy" /><figcaption>Repair Coordination+ · final design</figcaption></figure>
-<figure class="w50"><img src="/work/hemlane-services/rc-upgrade-modal.png" alt="Upgrade Package modal" loading="lazy" /><figcaption>Upgrade modal</figcaption></figure>
+<figure><img src="/work/hemlane-services/rc-final.webp" alt="Final Repair Coordination+ page with Complete, Essential and Basic sections" loading="lazy" /><figcaption>Repair Coordination+ · final design</figcaption></figure>
+<figure class="w50"><img src="/work/hemlane-services/rc-upgrade-modal.webp" alt="Upgrade Package modal" loading="lazy" /><figcaption>Upgrade modal</figcaption></figure>
 
 <div class="screens two">
-  <figure><img class="tall" src="/work/hemlane-services/services-mobile.png" alt="Services tab and Repair Coordination+ on mobile" loading="lazy" /><figcaption>Mobile</figcaption></figure>
+  <figure><img class="tall" src="/work/hemlane-services/services-mobile.webp" alt="Services tab and Repair Coordination+ on mobile" loading="lazy" /><figcaption>Mobile</figcaption></figure>
 </div>
 
 ## Prototype
@@ -133,8 +133,8 @@ CTAs moved out of the cards into one general CTA that opens an upgrade modal. In
 
 I built the Services prototype last, since the other feature pages had to exist first to connect the upgrade flows.
 
-<figure><img src="/work/hemlane-services/prototype-1.png" alt="Prototype flow connecting the Services tab states" loading="lazy" /></figure>
-<figure><img src="/work/hemlane-services/prototype-2.png" alt="Prototype flow continued" loading="lazy" /></figure>
+<figure><img src="/work/hemlane-services/prototype-1.webp" alt="Prototype flow connecting the Services tab states" loading="lazy" /></figure>
+<figure><img src="/work/hemlane-services/prototype-2.webp" alt="Prototype flow continued" loading="lazy" /></figure>
 
 ## Testing & iterating
 

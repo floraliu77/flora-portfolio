@@ -7,10 +7,15 @@ const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b
 ---
 <Base title="Portfolio" current="Portfolio" description="UX and product design case studies by Flora Liu.">
   <section class="work portfolio" aria-labelledby="portfolio-title">
+    <img class="planet sketch-star p2" src="/art/sketch/triangle-dots.svg" alt="" style="right: 9%; top: 4.5rem; width: 4.25rem" />
+    <img class="planet sketch-star p3" src="/art/sketch/sparkle.svg" alt="" style="right: 22%; top: 9rem; width: 2rem" />
+    <img class="planet sketch-star p1" src="/art/sketch/square-tone.svg" alt="" style="left: 2%; top: 36%; width: 3.75rem" />
+    <img class="planet sketch-star p4" src="/art/sketch/circle-dots.svg" alt="" style="right: 3%; top: 63%; width: 4.5rem" />
+    <img class="planet sketch-star p3" src="/art/sketch/star-tone.svg" alt="" style="left: 46%; bottom: 3rem; width: 3rem" />
     <div class="work-inner">
       <div style="display: flex; flex-direction: column; gap: .9rem; max-width: 40rem">
         <h1 id="portfolio-title" class="section-title">Portfolio</h1>
-        <p style="margin: 0; font-size: 1.2rem; line-height: 1.55">Product design from four and a half years at a SaaS startup, and new HCI work from Carnegie Mellon.</p>
+        <p style="margin: 0; font-size: 1.2rem; line-height: 1.55">Selected design work from my professional career at a SaaS startup and my coursework at Carnegie Mellon.</p>
       </div>
       {work.map((entry, i) => <CaseCard entry={entry} flip={i % 2 === 1} />)}
     </div>
