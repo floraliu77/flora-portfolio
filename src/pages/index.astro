@@ -62,9 +62,9 @@ const work = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b
     <img class="planet sketch-star p3" src="/art/sketch/triangle-tone.svg" alt="" style="right: 5%; top: 70%; width: 4.75rem" />
     <img class="planet sketch-star p4" src="/art/sketch/sparkle.svg" alt="" style="left: 46%; bottom: 3rem; width: 2.75rem" />
     <div class="work-inner">
-      <div style="display: flex; flex-direction: column; gap: .9rem; max-width: 40rem">
+      <div style="display: flex; flex-direction: column; gap: .75rem; max-width: 40rem">
         <h2 id="work-title" class="section-title">Selected work</h2>
-        <p style="margin: 0; font-size: 1.2rem; line-height: 1.55">Selected design work from my professional career at a SaaS startup and my coursework at Carnegie Mellon.</p>
+        <p style="margin: 0; font-size: 1.1rem; line-height: 1.6; color: var(--ink-2)">Selected design work from my professional career at a SaaS startup and my coursework at Carnegie Mellon.</p>
       </div>
       {work.map((entry, i) => <CaseCard entry={entry} flip={i % 2 === 1} />)}
     </div>
